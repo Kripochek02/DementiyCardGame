@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dementiy</string>
+    <string name="app_name">CardGame</string>
     <string name="app_name2">English_name</string>
     <string name="title_activity_item_detail_host">ItemDetailHostActivity</string>
     <string name="title_item_list">Items</string>

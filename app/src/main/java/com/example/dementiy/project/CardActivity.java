@@ -67,6 +67,7 @@ public class CardActivity extends AppCompatActivity {
                         if (card.getLvl() > botSelectedCard.getLvl()) {
                             boylist.remove(botSelectedCard);
                             boylist.remove(card);
+                            card.setLvl(card.getLvl() - botSelectedCard.getLvl());
                             cards.add(card);
                             Toast.makeText(getApplicationContext(), "Ваша карта выиграла",
                                     Toast.LENGTH_SHORT).show();
@@ -82,6 +83,7 @@ public class CardActivity extends AppCompatActivity {
                         } else {
                             boylist.remove(botSelectedCard);
                             boylist.remove(card);
+                            botSelectedCard.setLvl(botSelectedCard.getLvl() - card.getLvl());
                             botCards.add(botSelectedCard);
                             Toast.makeText(getApplicationContext(), "Ваша карта проиграла",
                                     Toast.LENGTH_SHORT).show();
